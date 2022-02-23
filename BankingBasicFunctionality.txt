@@ -1,0 +1,58 @@
+Mode of money transfer :
+------------------------------
+Under corporate Internet Banking we have 24+ modes of fund transfer out of which below three are the main modes of payment transfer.
+
+1. Acc- to-Acc
+2.NEFT(National Electronic Fund Transfer)
+3.RTGS(Real Time Gross Settlement)
+
+1. Account to Account:
+The transactions that are done within one bank network are called Account to Account transfer 
+under this mode there is no reporting to RBI.
+eg: from HDFC one bank to another HDFC bank or same HDFC bank.
+
+NEFT(National Electronic Fund Transfer):
+The transactions happen between two different banks beween the transfer RBI comes in between.
+The flow of transfer is like this 
+	eg: HDFC(remitter) -> RBI -> SBI(benificary)
+
+RTGS(Real Time Gross Settlement):
+RTGS is combination of  NEFT and Acc-to-Acc but if the fund transfer exceeds 2,00,000 we have to choose this mode of transfer.
+
+below we have the other modes of transfer in ENET :
+->IMPS(Immediate Payment Service) : This is similar to NEFT but these are chargable so they take less time to complete the transfer. 
+
+->FLA Acc-to-Acc
+->Bulk payments 
+->Collections
+->DD
+->Hundi Acc-to-Acc
+->EPI payment
+->Special payment
+->Broker payout
+->Salary peyment
+->Single payment
+->Hundie NEFT
+->Hundie RTGS
+->Quick payment
+->CBDT payment type
+->GST payment
+
+All of these are similar but for customers customisation these are seggregated into multiple types.
+
+ENET have 5 roles authorization
+
+i. corporate inputer
+ii.corporate first authorizer
+iii.corporate second authorizer
+iv. confirmer
+v.verifier
+
+Bulk upload :
+client will upload the file system verifies the adaptor file and initates the transaction for all the employees inside adaptor file
+This file follows specific pattern in customers data.
+
+
+Adaptor files are of two types
+FLA Adaptor.(file level authorization)
+TLA Adaptor.(file level + transaction level authorization)
