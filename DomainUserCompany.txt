@@ -1,0 +1,33 @@
+Everything works on the concept of maker and checker.
+->Maker is create/update a user/domain/company inside admin through ENET.
+->Checker is the process of authorizing/approving a user/domain/company after create/update.
+Note : The updataed changes will only be refelcted at the core side only if the the changes are authorized.
+
+Creating Domains under Administration tab:
+-----------------------------------------------------
+step 1(maker process):  corporate reaches the Bank Administrative and ask for domain creation ,and the administrator asks necessary details like how many users they want         under this domain, password retries, password expiry and other benifits of schemes through bank as an intermediate.
+
+	(onscreen verfiy flag is used for the levels of authorization (first level or second level based on the access rates) when a transaction is initiated by the corporate 		inputer.)
+
+step 2(checker process): Under this process the administrator authorizes the Domain by clicking authorizing by checking all the flags, so that doamin will be updated at DB. 
+
+-> If the corporate need some extra functionalities to work , then the adminstrator will edit the domain details by going to the review section of Administration tab and searches the domain by the domian name and edits(the editing also comes under makers concept) after the edit again those changes needs to be authorized under Authorize section of same tab.
+->We can also create a domain by uploading a CSV(Comma Separated Values) file by following a specific format of data.
+
+============================================================================================================================
+We have 8 levels of users inside the ENETMVC application
+
+UM Inputer(the maker) : He is the super user for ENETMVC application, he creates the admin level users for administration level activities(like above)
+UM Authorizer : He is the super authorizer for bank admin user authorization
+Note : The above two are the two super levels of ENETMVC application.
+
+Admin Inputer : Admin Inputer is the guy who creates domains for organizations.
+Admin Authorizer : The domains created by Admin inputer will be authorized(passed) by this user.
+
+Corporate Inputer : corporate inputer can only initalize payment using the payments website.
+Corporate Authorizer(first level/second level) : corporate authorizes the inputer payment.
+Corporate verifier : this user comes in picture when the onscreen verify flag is checked during the domain creation, he needs to login and verify.
+
+step 3: The admin creates users under the particular domain.
+
+Company creation : under this section the comoany/organizations cutomerId(account number) will be mapped with domain after all the users under the domain will be mapped with the company.
