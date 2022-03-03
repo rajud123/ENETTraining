@@ -1,0 +1,23 @@
+We have 3 applications
+i.ENETAdmin(for bank for Domain, Company, User creation)
+ii.ENETMVC(for corporate bank)
+iii. SSL(for easy view)
+
+->Admin from bank creates users for corporate bank and provides his credentials, so user can login to the corporate application and handles payments.
+->Users make two type payments.
+	i.)Bulk payment
+	ii.)On screen payment
+
+Access Rights:
+-----------------
+Whenever inputer initiates transaction authorizer authorizes transaction, but the authorizer has right(access) to authorize only upto some amount those rights are called access rights.
+These rights are provided by the admins for the user under Acces rights section in Adminstration tab so the admin provides access limit for the user to some amount to authorize.
+
+CASH MANAGEMENT TAB FOR BULK UPLOAD
+FUND TRANSFER FOR ONSCREEN
+
+For bulk upload got to Cash management tab
+The file(CSV file) we are uploading and the client code should be same.
+we can view the status of upload from File level view by giving client id bt looking at status.
+After upload the file needs to be authorized which can be done with file level authorization section in CASH MANAGEMENT TAB.
+After the file level authorization if we want authorize a single transaction we can got Transaction level authorization.
